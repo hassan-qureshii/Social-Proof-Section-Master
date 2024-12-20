@@ -6,97 +6,68 @@
 }
 
 body{
-    background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/social-proof-section-master/images/bg-pattern-top-desktop.svg');
+    height:100vh;
+    background:url('bg-pattern-top-desktop.svg');
     background-repeat: no-repeat;
     background-color: hsl(0, 0%, 100%);
 }
 
-.paragraph{
-    width:50%;
-    padding:40px 0px 0px 100px;
-    color: hsl(300, 43%, 22%);
+header{     
+    margin:70px 0px;
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.text{
+    width:35%;
 }
 
 .paragraph h1{
-    font-size:40px;
-    padding:0px 170px 10px 0px;
-    
+    font-family:cursive,sans-serif;
+    width:400px;
+    color: hsl(300, 43%, 22%);
+    font-size:50px;
+    padding-bottom:20px;
 }
 
 .paragraph p{
-    padding:20px 150px 0px 0px;
-    
+    line-height:28px;
+    font-size:18px;
 }
 
 .images{
-    width:50%;
-    padding:60px;
+    width:35%;
 }
 
-.column1{
-    margin:10px 40px; 
-    border-radius:5px;
-    width:390px;
-    padding:10px; 
-    background-color: hsl(300, 24%, 96%);
-    color: hsl(300, 43%, 22%);
-}
-
-.column2{
-    margin:10px 80px;
-    border-radius:5px;
-    width:390px;
-    padding:10px; 
-    background-color: hsl(300, 24%, 96%);
-    color: hsl(300, 43%, 22%);
-}
-
-.column3{
-    margin:10px 120px;
-    border-radius:5px;
-    width:390px;
-    padding:10px; 
-    background-color: hsl(300, 24%, 96%);
-    color: hsl(300, 43%, 22%);
-}
-
-header{
+.column{    
+    border-radius:7px;
+    width:400px;
+    background-color:rgba(224, 161, 224, 0.162);
     display: flex;
+    align-items: center;
+    justify-content:center;
+    height:50px;
 }
 
-.container1{
-    margin:10px 10px 0px 100px; 
-    border-radius: 7px;
-    padding:30px;
-    background-color: hsl(300, 43%, 22%);
-    color:white;
-    width:28%;
-    height:220px;
+.column:nth-child(1){
+    margin:0px 10px;
 }
 
-.container2{
-    margin:30px 10px 0px 10px ;
-    border-radius: 7px;
-    padding:30px;
-    background-color: hsl(300, 43%, 22%);
-    color:white;
-    width:28%;
-    height:220px;
+.column:nth-child(2){
+    margin:10px 30px;
 }
 
-.container3{
-    margin:50px 10px 0px 10px; 
-    border-radius: 7px;
-    padding:30px;
-    background-color: hsl(300, 43%, 22%);
-    color:white;
-    width:28%;
-    height:220px;
+.column:nth-child(3){
+    margin:0px 50px;
 }
 
+/* section */
 section{
-    margin-top: 50px;
     display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
 }
 
 section img{
@@ -113,214 +84,163 @@ section h5{
     color:hsl(333, 80%, 67%);
 }
 
+.container{  
+    border-radius:7px;
+    padding:20px;
+    background-color: hsl(300, 43%, 22%);
+    color:white;
+    width:30%;
+    height:250px;
+}
+
+.container:nth-child(2){
+    margin:30px 0px;
+}
+
+.container:nth-child(3){
+    margin:50px 0px;
+}
+
 .profile{
     display:inline-block;
     vertical-align: top;
     padding:10px 0px 10px 10px;
 }
 
-/* MEDIA QUERIES OF DESKTOP SCREEN */
-@media(max-width:1240px){
-    .paragraph{
-        padding:40px 0px 0px 60px;
-    }
+.container-par{
+    padding:30px 0px;
+}
 
-    .paragraph h1{
-        padding:0px 100px 10px 0px;
-    }
-    
-    .paragraph p{
-        padding:20px 0px 20px 0px;
-    }
-    
-    .images{
-        width:50%;
-        padding:60px 20px 60px 20px;
-    }
-    .column1{
-        margin:10px 25px; 
-    }
-    
-    .column2{
-        margin:10px 50px;
-    }
-    
-    .column3{
-        margin:10px 75px;
-    }
-     
-    .container1{
-        margin:10px 10px 0px 60px; 
-    }
-    
-    .container2{
-        margin:30px 10px 0px 10px ;
-    }
-    
-    .container3{
-        margin:50px 10px 0px 10px; 
-    }
+.container-par p{
+    line-height:23px;
+}
+
+/* Media Queries of 1200px */
+@media(max-width:1200px){
+header{     
+    margin: 50px 0px;
+}
+
+/* section */
+.container{  
+    width:32%;
+    height: 240px;
+}
+}
+
+/* Media Queries of 1023 */
+@media(max-width:1023px){
+.text{
+    width:45%;
+}
+
+.paragraph h1{
+    font-size:40px;
+}
+
+.paragraph p{
+    font-size:16px;
+}
+
+.images{
+    width:45%;
+}
+
+.column{    
+    width:350px;
+}
+
+/* section */
+.container{  
+    width:45%;
+}
+}
+
+/* Media Queries of  790px */
+@media(max-width:790px){
+header{     
+    margin:40px 0px;
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.text{
+    width:100%;
+}
+
+.paragraph h1{
+
+    text-align:center;
+    font-family:cursive,sans-serif;
+    width:100%;
+    color: hsl(300, 43%, 22%);
+    padding:20px 50px;
+}
+
+.paragraph p{
+    text-align:center;
+    padding:10px 30px;;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.images{
+    width:100%;
+}
+
+.column{ 
+    display:flex;
+    justify-content:center;   
+    width:90%;
+}
+
+.column:nth-child(1){
+    margin:0px 30px;
+}
+
+.column:nth-child(2){
+    margin:10px 30px;
+}
+
+.column:nth-child(3){
+    margin:0px 30px;
+}
+
+/* section */
+section{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
 }
 
 
-/* MEDIA QUERIES OF TABLET SCREEN */
-@media(max-width:991px){
-    .paragraph{
-        text-align: center;
-        width:100%;
-        padding:40px 0px;
-    }
-    
-    .paragraph h1{
-        font-size:50px;
-        padding:10px 180px;
-        
-    }
-    .paragraph p{ 
-        padding:10px 100px;
-    }
-
-    .images{
-        width:100%;
-        padding:40px 0px;
-    }
-    
-    .column1{
-        text-align: center;
-        margin:10px 100px; 
-        width:80%;
-        height:70px;
-        padding:25px; 
-    }
-    
-    .column2{
-        text-align: center;
-        margin:10px 100px; 
-        width:80%;
-        height:70px;
-        padding:25px;
-    }
-    
-    .column3{
-        text-align: center;
-        margin:10px 100px; 
-        width:80%;
-        height:70px;
-        padding:25px;
-    }
-    
-    header{
-       flex-direction: column;
-    }
-    
-    .container1{
-        margin:10px 100px; 
-        padding:50px;
-        width:80%;
-        height:auto;
-    }
-    
-    .container2{
-        margin:10px 100px; 
-        padding:50px;
-        width:80%;
-        height:auto;
-    }
-    
-    .container3{
-        margin:10px 100px; 
-        padding:50px;
-        width:80%;
-        height:auto;
-    }
-    
-    section{
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    
+.container{  
+    border-radius:7px;
+    padding:20px;
+    background-color: hsl(300, 43%, 22%);
+    color:white;
+    width:90%;
+    height:220px;
 }
 
+.container:nth-child(2){
+    margin:30px 0px;
+}
 
-/* MEDIA QUERIES OF MOBILE SCREEN */
-@media(max-width:767px){
-    body{
-    background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/social-proof-section-master/images/bg-pattern-top-mobile.svg');
-    background-repeat: no-repeat;
-   }
+.container:nth-child(3){
+    margin:0px 0px;
+}
+}
 
-    .paragraph{
-        text-align: center;
-        width:100%;
-        padding:40px 0px;
-    }
-    
-    .paragraph h1{
-        font-size:40px;
-        padding:10px 40px;
-        
-    }
-    .paragraph p{ 
-        padding:10px 20px;
-    }
+/* Media Queries of 450px */
+@media(max-width:450px){
+.paragraph h1{
+    padding:20px 30px;
+}
 
-    .images{
-        width:100%;
-        padding:40px 0px;
-    }
-    
-    .column1{
-        text-align: center;
-        margin:10px 30px; 
-        width:90%;
-        height:70px;
-        padding:25px; 
-    }
-    
-    .column2{
-        text-align: center;
-        margin:10px 30px; 
-        width:90%;
-        height:70px;
-        padding:25px;
-    }
-    
-    .column3{
-        text-align: center;
-        margin:10px 30px; 
-        width:90%;
-        height:70px;
-        padding:25px;
-    }
-    
-    header{
-       flex-direction: column;
-    }
-    
-    .container1{
-        margin:10px 30px; 
-        padding:50px;
-        width:90%;
-        height:auto;
-    }
-    
-    .container2{
-        margin:10px 30px; 
-        padding:50px;
-        width:90%;
-        height:auto;
-    }
-    
-    .container3{
-        margin:10px 30px; 
-        padding:50px;
-        width:90%;
-        height:auto;
-    }
-    
-    section{
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    
+.paragraph p{
+    padding:10px 20px;
+}
 }

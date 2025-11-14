@@ -84,7 +84,6 @@ header {
   margin: 0 50px;
 }
 
-/* Section */
 section {
   display: flex;
   justify-content: space-evenly;
@@ -110,11 +109,7 @@ section h5 {
 .container {
   border-radius: 10px;
   padding: 20px;
-  background: linear-gradient(
-    145deg,
-    hsl(300, 43%, 22%) 0%,
-    hsl(303, 36%, 25%) 100%
-  );
+  background: linear-gradient(145deg,hsl(300, 43%, 22%) 0%,hsl(303, 36%, 25%) 100%);
   color: white;
   width: 30%;
   height: 250px;
@@ -151,7 +146,6 @@ section h5 {
   font-weight: 400;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -205,7 +199,7 @@ section h5 {
   }
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 1023px) {
   .text {
     width: 45%;
